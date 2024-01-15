@@ -1,0 +1,70 @@
+#giftcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftcard-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 4rem;
+    margin-top: 0;
+}
+
+.giftcard-values {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.giftcard-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.giftcard-atc-wrapper {
+    display: flex;
+}
+
+.date-value-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.giftcard-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.gift-card-recipient {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: .75rem;
+    max-width: 200px;
+    overflow-wrap: break-word;
+    line-height: .95rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .giftcard-title {
+        font-size: 3rem;
+    }
+
+    .giftcard-content {
+        margin: 0rem;
+    }
+
+    .giftcard-info {
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+  }

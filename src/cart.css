@@ -1,0 +1,253 @@
+ #open-cart {
+    border: 1px solid white;
+ }
+
+ #open-cart span {
+    padding-bottom: .5rem;
+ }
+
+ #cart-items {
+    height: 100%;
+    max-height: calc(100% - 15rem);
+    overflow: scroll;
+    overflow-x: hidden;
+ }
+
+ #cart-container {
+    height: 100vh;
+    background-color: #f5f5f5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: 9999;
+    width: 450px;
+    max-width: 100%;
+ }
+
+ #cart-container.closed {
+    transform: translateX(460px);
+ }
+
+ #cart-container.open {
+    transform: translateX(0px);
+ }
+
+ #cart-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+    backdrop-filter: brightness(90%);
+    height: 100vh;
+    width: 100vw;
+ }
+
+ #cart-container.open+#cart-backdrop {
+    display: block;
+ }
+
+ #cart-container.closed+#cart-backdrop {
+    display: none;
+ }
+
+ .cart-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid lightgray;
+ }
+
+ .cart-item:last-of-type {
+    border: none;
+ }
+
+ .cart-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 5px;
+    mix-blend-mode: multiply;
+ }
+
+ .cart-item h5,
+ .cart-item p {
+    margin: 0;
+ }
+
+ .cart-item h5 {
+    font-size: 0.75rem;
+    letter-spacing: -.01rem;
+    margin-bottom: 0.5rem;
+    font-family: "Barlow Semi Condensed" !important;
+ }
+
+ .cart-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+ }
+
+ .cart-item-top button {
+    border: none;
+    margin-left: 1rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: .75rem;
+ }
+
+ .popup-button-wrapper button {
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+ }
+
+ .cart-item-top button:hover {
+    color: brown;
+ }
+
+ .cart-item-info {
+    width: calc(100% - 120px);
+ }
+
+ .cart-item-info small:last-of-type {
+    font-size: .7rem;
+ }
+
+ .cart-item-expectation {
+    font-size: 12px;
+    text-transform: uppercase;
+ }
+
+ .cart-item-volume {
+    font-size: 12px;
+    opacity: .66;
+ }
+
+ .cart-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Barlow Semi Condensed";
+ }
+
+ .cart-qty-wrapper select {
+    width: 100px;
+    font-family: "Barlow Semi Condensed";
+    height: 35px;
+    font-size: 1rem;
+ }
+
+ #cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+ }
+
+ #cart-top h3 {
+    margin: 0;
+    font-size: 2rem;
+ }
+
+ #cart-bottom {
+    padding: .5rem;
+    font-family: "Barlow Semi Condensed";
+ }
+
+ #cart-bottom h3 {
+    font-family: "Barlow Semi Condensed" !important;
+    font-size: 1.125rem;
+    font-weight: 500;
+ }
+
+ #checkout {
+    width: 100%;
+    border: 1px solid black;
+    padding: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: 1rem 0;
+    margin-bottom: 3.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+ }
+
+ #checkout:hover {
+    background-color: black;
+    color: white;
+ }
+
+ .cart-subtotal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .cart-subtotal-info h3 {
+    margin: 0 !important;
+    font-size: 1.125rem;
+
+ }
+
+ .cart-subtotal-items {
+    display: flex;
+    align-items: center;
+ }
+
+ .cart-subtotal-items h3 {
+    margin: 0;
+ }
+
+ .cart-num-items {
+    margin: 0 .25rem;
+    padding: 0 .5rem;
+ }
+
+
+ .cart-item-engraving {
+    background-color: rgba(112, 128, 144, 0.172);
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+ }
+
+ .cart-item-engraving h5 {
+    margin-left: 1rem;
+ }
+
+ .cart-item-engraving ul {
+    margin: 0;
+ }
+
+ .cart-item-engraving li {
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-size: 12px;
+ }
+
+ #close-cart {
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+ }
+
+ #close-cart {
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+ }
+
+ #close-cart {
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+ }

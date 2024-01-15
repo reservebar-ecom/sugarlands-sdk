@@ -1,0 +1,77 @@
+<!-- Liquid SDK -->
+<script type="text/javascript" src="https://sdk.liquidcloud.app/liquid-sdk.js"></script>
+<link rel="stylesheet" href="plp.css">
+<link rel="stylesheet" href="address-popup.css">
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="sdk.css">
+
+
+<div class="popup-button-wrapper">
+    <button class="el-content uk-button uk-button-default" id="popup-open">Enter Delivery Address</button>
+</div>
+
+<div id="popup">
+    <div id="popup-background"></div>
+    <div id="popup-modal">
+        <div class="popup-close-container">
+            <button id="popup-close">✕</button>
+        </div>
+        <h4>Enter your delivery address</h4>
+        <div id="address-input-container">
+            <input type="text" placeholder="Enter your address" id="address-input" />
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+        </div>
+    </div>
+</div>
+
+<div id="plp">
+</div>
+
+<!-- CART  -->
+<div id="cart">
+    <div id="cart-container" class="closed">
+        <div id="cart-top">
+            <h3>Cart</h3>
+            <button id="close-cart">✕</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-bottom">
+            <div class="cart-subtotal-info">
+                <div class="cart-subtotal-items">
+                    <h3>Subtotal: </h3>
+                    <h3 style="margin:auto .5rem;" class="cart-num-items"></h3>
+                    <h3>item(s)</h3>
+                </div>
+                <h3 id="cart-subtotal"></h3>
+            </div>
+            <button class="el-content uk-button uk-button-default" id="checkout">
+                Checkout
+            </button>
+        </div>
+    </div>
+    <div id="cart-backdrop"></div>
+</div>
+
+<!-- LOADER  -->
+<div id="loader">
+    <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="sdk.js"></script>
+<script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript" src="address-popup.js"></script>
+<script type="text/javascript" src="plp.js"></script>

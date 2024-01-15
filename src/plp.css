@@ -1,0 +1,114 @@
+.collection-card-heading {
+    text-align: center;
+}
+
+.product-grouping {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.product-availability {
+    margin: .125rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: slategray;
+}
+
+.product-grouping:last-of-type {
+    border: none;
+}
+
+[liquid-id] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100%/3 - 2rem);
+    text-align: center;
+}
+
+[liquid-id] a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    position: relative;
+    text-decoration: none;
+    color: #111;
+    margin-bottom: 4rem;
+}
+
+.product-card h3 {
+    margin: .5rem 0;
+}
+
+.product-image {
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-unavailable {
+    text-transform: uppercase;
+    color: brown;
+    font-size: 12px;
+}
+
+.product-no-address {
+    text-transform: uppercase;
+    color: slategray;
+    font-size: 12px;
+}
+
+.engraving-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: calc(100% - 6rem);
+    margin-top: -23px;
+}
+
+.engraving-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 0 .5rem;
+}
+
+.engraving-icon small {
+    margin-right: .5rem;
+    color: gray;
+    font-size: 12px;
+    font-family: 'Barlow Semi Condensed' !important;
+}
+
+.engraving-icon svg {
+    opacity: .3;
+}
+
+.gift-card-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-card-value {
+    margin: .25rem;
+    padding: .125rem .5rem;
+    border: 1px solid lightgray;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    [liquid-id] {
+        width: 100%;
+    }
+}

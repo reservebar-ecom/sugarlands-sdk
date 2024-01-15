@@ -1,0 +1,120 @@
+<!-- Liquid SDK -->
+<script type="text/javascript" src="https://sdk.liquidcloud.app/liquid-sdk.js"></script>
+<link rel="stylesheet" href="pdp.css">
+<link rel="stylesheet" href="plp.css">
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="giftcard.css">
+
+<!-- Carousel  -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+
+<!-- Address Input  -->
+<div class="popup-button-wrapper" style="display:none;">
+    <button class="el-content uk-button uk-button-default" id="popup-open">Enter Delivery Address</button>
+</div>
+
+<!-- Address Modal  -->
+<div id="popup" style="display:none;">
+    <div id="popup-background"></div>
+    <div id="popup-modal">
+        <div class="popup-close-container">
+            <button id="popup-close">✕</button>
+        </div>
+        <h4>Enter your delivery address</h4>
+        <div id="address-input-container">
+            <input type="text" placeholder="Enter your address" id="address-input" />
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+            <button class="address-option"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Gift Card content  -->
+<h1 class="giftcard-title">Gift Card</h1>
+<div id="giftcard">
+    <div class="giftcard-content">
+        <div class="img">
+            <img id="giftcard-img" src="">
+        </div>
+        <div class="giftcard-info">
+            <div class="input-wrapper">
+                <label>Recipient's Email</label>
+                <input type="email" id="giftcard-recipients" placeholder="email">
+            </div>
+            <div class="input-wrapper">
+                <label>Sender's Name</label>
+                <input type="text" id="giftcard-sender" placeholder="from">
+            </div>
+            <div class="date-value-wrapper">
+                <div class="input-wrapper">
+                    <label>Send Date</label>
+                    <input type="date" id="giftcard-sendDate">
+                </div>
+                <div class="input-wrapper">
+                    <label>Value</label>
+                    <select id="giftcard-values" name="giftcard-values"></select>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label>Message</label>
+                <textarea id="giftcard-message"></textarea>
+            </div>
+            <button class="el-content uk-button uk-button-default" id="giftcard-atc" disabled>Add To Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- CART  -->
+<div id="cart">
+    <div id="cart-container" class="closed">
+        <div id="cart-top">
+            <h3>Cart</h3>
+            <button id="close-cart">✕</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-bottom">
+            <div class="cart-subtotal-info">
+                <div class="cart-subtotal-items">
+                    <h3>Subtotal: </h3>
+                    <h3 style="margin:auto .5rem;" class="cart-num-items">0</h3>
+                    <h3>item(s)</h3>
+                </div>
+                <h3 id="cart-subtotal"></h3>
+            </div>
+            <button class="el-content uk-button uk-button-default" id="checkout">
+                Checkout
+            </button>
+        </div>
+    </div>
+    <div id="cart-backdrop"></div>
+</div>
+
+<!-- CAROUSEL  -->
+<div id="pdp-carousel" class="owl-carousel owl-theme"></div>
+
+<!-- LOADER  -->
+<div id="loader">
+    <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="sdk.js"></script>
+<script type="text/javascript" src="address-popup.js"></script>
+<script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript" src="giftcard.js"></script>
