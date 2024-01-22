@@ -409,7 +409,7 @@ const carouselCard = (product) => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const group = urlParams.get('group');
-    const baseURL = '/product';
+    const baseURL = '/product-liquid-sdk';
 
     if (product) {
         const address = getState('address');

@@ -422,6 +422,8 @@ label[for="engraving-checkbox"] {
 .engraving-atc button {
    font-size: 12px;
    margin-left: 1rem;
+   background: transparent;
+   color: #913F39;
 }
 
 .engraving-body p {

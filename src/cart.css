@@ -85,7 +85,6 @@
     font-size: 0.75rem;
     letter-spacing: -.01rem;
     margin-bottom: 0.5rem;
-    font-family: "Barlow Semi Condensed" !important;
  }
 
  .cart-item-top {
@@ -140,12 +139,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Barlow Semi Condensed";
  }
 
  .cart-qty-wrapper select {
     width: 100px;
-    font-family: "Barlow Semi Condensed";
     height: 35px;
     font-size: 1rem;
  }
@@ -164,11 +161,9 @@
 
  #cart-bottom {
     padding: .5rem;
-    font-family: "Barlow Semi Condensed";
  }
 
  #cart-bottom h3 {
-    font-family: "Barlow Semi Condensed" !important;
     font-size: 1.125rem;
     font-weight: 500;
  }
