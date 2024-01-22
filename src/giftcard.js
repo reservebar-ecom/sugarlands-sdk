@@ -37,7 +37,7 @@ const carouselCard = (product) => {
         const minimumPrice = prices ? Math.min(...prices) : '';
         const productHTML = `
                  <div class="product-backdrop">
-                        <b>${product?.name}</b>
+                        <b class="plp-product-name">${product?.name}</b>
                         ${address ?
                 ` 
                             ${product?.variants?.length === 0 ? '<p class="product-unavailable">Unavailable Product</p>' : ''}

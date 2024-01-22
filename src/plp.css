@@ -1,3 +1,10 @@
+.plp-product-name {
+    color: #06303A;
+    font-family: 'brandon-grotesque';
+    font-size: 20px;
+
+}
+
 .collection-card-heading {
     text-align: center;
 }

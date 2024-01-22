@@ -57,7 +57,7 @@ const createProductCard = (product, id) => {
                 :
                 `<p class="product-no-address">Insert Address to Check Availability</p>`
             }
-            <b>${product?.name}</b>
+            <b class="plp-product-name">${product?.name}</b>
                 `;
 
         [...productCards].forEach(productCard =>{
