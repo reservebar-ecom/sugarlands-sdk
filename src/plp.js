@@ -1,9 +1,9 @@
 const prePopulateCards = () => {
     const plpEl = document.querySelector('#plp');
     Object.keys(groups).filter(gr => gr != 'all').forEach(group => {
-        const groupHeader = document.createElement('h2');
-        groupHeader.innerText = groups[group].name;
-        groupHeader.classList.add('collection-card-heading');
+        // const groupHeader = document.createElement('h2');
+        // groupHeader.innerText = groups[group].name;
+        // groupHeader.classList.add('collection-card-heading');
 
         const productGrouping = document.createElement('div');
         productGrouping.classList.add('product-grouping');
