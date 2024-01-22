@@ -31,10 +31,10 @@ button {
 
 #product-name {
    text-transform: uppercase;
-   letter-spacing: -2px;
    text-align: center;
-   font-size: 1.75rem;
+   font-size: 1.5rem;
    margin-bottom: 3rem;
+   font-family: 'brandon-grotesque';
 }
 
 #product-unavailability-alert {
@@ -94,17 +94,14 @@ button {
 
 .variant-option h5 {
    margin: 0;
-   font-size: 1.25rem;
+   font-size: 18px;
    text-transform: uppercase;
    margin-left: 1rem;
-   color: rgb(62, 77, 77);
-   font-family: 'Barlow Semi Condensed' !important;
    font-weight: 600;
 }
 
 .variant-option span {
    font-size: 1.5rem;
-   font-family: 'Barlow Semi Condensed';
    margin: 0 1rem;
 }
 
@@ -183,7 +180,6 @@ button {
 .retailer-name {
    text-transform: uppercase;
    font-size: .7rem;
-   font-family: Georgia,"Times New Roman",Times,serif;
 }
 
 .retailer-delivery-expectation {
@@ -368,9 +364,7 @@ button {
 }
 
 label[for="engraving-checkbox"] {
-   margin-bottom: .125rem;
    margin-left: .5rem;
-   font-family: Georgia,"Times New Roman",Times,serif !important;
    text-transform: uppercase;
    font-size: .8rem;
 }
@@ -378,7 +372,7 @@ label[for="engraving-checkbox"] {
 .engraving-badge,
 .engraving-badge-mobile {
    text-transform: uppercase;
-   background: slategray;
+   background: #C17B25;
    border: 1px solid transparent;
    padding: 0 0.5rem;
    font-size: 12px !important;
