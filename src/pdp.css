@@ -123,7 +123,6 @@ button {
 
 #atc {
    display: none;
-   border: 1px solid black;
    font-weight: bolder;
    text-transform: uppercase;
    cursor: pointer;
@@ -410,11 +409,19 @@ label[for="engraving-checkbox"] {
 
 #engraving-inputs input {
    margin-left: 1rem;
+   border: none;
+   margin-top: 6px;
+   max-width: 100%;
 }
 
 #engraving-inputs input:read-only {
    border-bottom: none;
    color: black;
+}
+
+.engraving-atc button {
+   font-size: 12px;
+   margin-left: 1rem;
 }
 
 .engraving-body p {
