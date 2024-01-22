@@ -19,7 +19,7 @@ const prePopulateCards = () => {
             `).join('')
             }`;
 
-        plpEl.append(groupHeader);
+        // plpEl.append(groupHeader);
         plpEl.append(productGrouping);
     });
 }
