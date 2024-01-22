@@ -39,10 +39,11 @@ button {
 
 #product-unavailability-alert {
    text-align: center;
-   color: brown;
+   color: white;
    display: none;
-   font-family: Barlow Semi Condensed !important;
    font-size: 1rem;
+   background: #913F39;
+   padding: 1rem;
 }
 
 #product-unavailability-alert.visible {

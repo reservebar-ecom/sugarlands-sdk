@@ -428,7 +428,7 @@ const carouselCard = (product) => {
                         <b class="plp-product-name">${product?.name}</b>
                         ${address ?
                 ` 
-                        ${product?.variants?.length === 0 ? '<p class="product-unavailable">Unavailable Product</p>' : ''}
+                        ${product?.variants?.length === 0 ? '<p class="product-unavailable" style="display: none;">Unavailable Product</p>' : ''}
                 `
                 :
                 `<p class="product-no-address">Insert Address to Check Availability</p>`
