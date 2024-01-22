@@ -411,7 +411,7 @@ label[for="engraving-checkbox"] {
    margin-left: 1rem;
    border: none;
    margin-top: 6px;
-   max-width: 100%;
+   max-width: 320px;
 }
 
 #engraving-inputs input:read-only {
