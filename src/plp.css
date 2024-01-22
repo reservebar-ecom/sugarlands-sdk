@@ -1,7 +1,7 @@
 .plp-product-name {
     color: #06303A;
     font-family: 'brandon-grotesque';
-    font-size: 20px;
+    font-size: 24px;
 
 }
 
@@ -62,8 +62,10 @@
 
 .product-unavailable {
     text-transform: uppercase;
-    color: brown;
+    color: #FFF;
     font-size: 12px;
+    background: #913F39;
+    padding: 1px 8px;
 }
 
 .product-no-address {
@@ -85,13 +87,14 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    border: 1px solid lightgray;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
+    color: #FFF;
+    background: #c17b25;
 }
 
 .engraving-icon small {
     margin-right: .5rem;
-    color: gray;
+    color: #fff;
     font-size: 12px;
     font-family: 'Barlow Semi Condensed' !important;
 }
