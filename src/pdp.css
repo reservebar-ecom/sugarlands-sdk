@@ -18,12 +18,11 @@ button {
 
 #product-description {
    font-weight: lighter;
-   margin-top: 2rem;
+   margin-bottom: 2rem;
    display: flex;
    flex-direction: column;
    max-width: 900px;
    align-items: center;
-   padding: 4em;
    justify-content: center;
    width: 100%;
    margin: auto;
@@ -32,7 +31,8 @@ button {
 #product-name {
    text-transform: uppercase;
    text-align: center;
-   font-size: 1.5rem;
+   font-size: 2rem;
+   font-weight: bold;
    margin-bottom: 3rem;
    font-family: 'brandon-grotesque';
 }
