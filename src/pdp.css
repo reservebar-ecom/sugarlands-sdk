@@ -33,7 +33,7 @@ button {
    text-align: center;
    font-size: 2rem;
    font-weight: bold;
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    font-family: 'brandon-grotesque';
 }
 
@@ -515,6 +515,11 @@ label[for="engraving-checkbox"] {
    max-width: inherit !important;
    width: auto !important;
    height: 450px !important;
+}
+
+#pdp-carousel-title {
+   text-transform: uppercase;
+   text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
