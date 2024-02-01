@@ -518,6 +518,7 @@ label[for="engraving-checkbox"] {
 }
 
 #pdp-carousel-title {
+   margin-top: 2rem;
    text-transform: uppercase;
    text-align: center;
 }
@@ -530,6 +531,7 @@ label[for="engraving-checkbox"] {
 
    #product-description {
       padding: 0;
+      text-align: center;
    }
 
    #product-img {

@@ -63,9 +63,10 @@
 .product-unavailable {
     text-transform: uppercase;
     color: #FFF;
-    font-size: 12px;
+    font-size: 18px;
     background: #913F39;
     padding: 1px 8px;
+    margin-bottom: 20px;
 }
 
 .product-no-address {
