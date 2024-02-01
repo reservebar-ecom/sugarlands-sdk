@@ -395,11 +395,11 @@ const prePopulateCarousel = () => {
     const productGrouping = document.createElement('div');
     productGrouping.classList.add('item');
 
-    carousel.innerHTML = `${groups[group].ids.map(id => `
-        <div liquid-id="${id}" class="item product-card"> 
-        
-        </div>
-        `).join('')
+    carousel.innerHTML = `${groups[group].ids.map(id => {
+        if (!window.location.href.includes(id)) {
+            return `<div liquid-id="${id}" class="item product-card"></div>`
+        }
+    }).join('')
         }`;
 }
 
