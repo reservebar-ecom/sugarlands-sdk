@@ -11,7 +11,7 @@
 
 .product-grouping {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 4rem;
     border-bottom: 1px solid lightgray;
