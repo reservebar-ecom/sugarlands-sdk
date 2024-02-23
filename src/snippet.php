@@ -22,7 +22,20 @@ if ($query->have_posts()) {
         $postTitle = get_the_title();
         $groupingId = get_field('grouping-id', $postId);
         $product_image = get_field('product_image', $postId);
-
+        $post_taxonomies = get_object_taxonomies(get_post_type(), 'objects');
+        $post_categories = get_the_category($postId);
+        $first_category = !empty($post_categories) ? $post_categories[0] : null;
+        
+        // Output Taxonomies
+        foreach ($post_taxonomies as $taxonomy) {
+            $terms = get_the_terms($postId, $taxonomy->name);
+            if ($terms) {
+                foreach ($terms as $term) {
+                    $group = $term->name;
+                }
+            }
+        }
+    
         // Check if $groupingId contains "GROUPING-"
         if (strpos($groupingId, 'GROUPING-') !== false) {
             // Add post data to the array
@@ -31,6 +44,7 @@ if ($query->have_posts()) {
                 'postTitle' => $postTitle,
                 'groupingId' => $groupingId,
                 'product_image' => $product_image,
+                'group' => $group,
             );
         }
     }

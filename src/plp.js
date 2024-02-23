@@ -6,6 +6,10 @@ const prePopulateCards = () => {
         const baseURL = '/product-liquid-sdk';
         const gcURL = '/giftcard';
 
+        const groupHeader = document.createElement('h2');
+        groupHeader.innerText = groups[group].name;
+        groupHeader.classList.add('collection-card-heading');
+
         productGrouping.innerHTML = `${groups[group].ids.map(id => `
             <a liquid-id="${id}" 
             href="${id.includes('GIFTCARD') ? gcURL : baseURL }?groupingId=${id}&group=${group == 'gifts' ? 'all' : group}" 
@@ -15,6 +19,7 @@ const prePopulateCards = () => {
             `).join('')
             }`;
 
+        plpEl.append(groupHeader);
         plpEl.append(productGrouping);
     });
 }
