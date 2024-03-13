@@ -59,7 +59,7 @@ products.forEach(p => {
     const updatedGroupIds = (groupMap?.get(p?.group)?.ids || []);
     updatedGroupIds.push(p.groupingId);
     groupMap.set(
-        encodeURIComponent(p.group),
+        escape(p.group),
         {
             name: p.group,
             ids: updatedGroupIds
