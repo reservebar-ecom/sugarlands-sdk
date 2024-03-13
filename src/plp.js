@@ -7,7 +7,7 @@ const prePopulateCards = () => {
         const gcURL = '/giftcard';
 
         const groupHeader = document.createElement('h2');
-        groupHeader.innerText = unscape(group);
+        groupHeader.innerText = unescape(group);
         groupHeader.classList.add('collection-card-heading');
 
         productGrouping.innerHTML = `${groups[group].map(bottle => `
