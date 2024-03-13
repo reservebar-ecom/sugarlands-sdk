@@ -12,7 +12,7 @@ const prePopulateCards = () => {
 
         productGrouping.innerHTML = `${groups[group].map(bottle => `
             <a liquid-id="${bottle.groupingId}" 
-            href="${id.includes('GIFTCARD') ? gcURL : baseURL }?groupingId=${bottle.groupingId}&group=${group == 'gifts' ? 'all' : group}" 
+            href="${bottle.groupingId.includes('GIFTCARD') ? gcURL : baseURL }?groupingId=${bottle.groupingId}&group=${group == 'gifts' ? 'all' : group}" 
             class="product-card">
             <span class="loader-skeleton"></span>
            </a>
