@@ -9,8 +9,8 @@ const prePopulateCarousel = () => {
     const productGrouping = document.createElement('div');
     productGrouping.classList.add('item');
 
-    carousel.innerHTML = `${groups[group].ids.map(id => `
-        <div liquid-id="${id}" class="item product-card"> 
+    carousel.innerHTML = `${groups[group].map(bottle => `
+        <div liquid-id="${bottle.groupingId}" class="item product-card"> 
            
         </div>
         `).join('')
@@ -68,7 +68,7 @@ const loadLiquid = async () => {
     const urlParams = new URLSearchParams(queryString);
     const groupingId = urlParams.get('groupingId');
     const group = escape(urlParams.get('group'));
-    const groupingIdValues = groups[group].ids;
+    const groupingIdValues = groups[group].map(bottle => bottle.groupingId);
 
     setState({ name: 'grouping_id', value: groupingId });
     setState({ name: 'grouping_ids', value: groupingIdValues });

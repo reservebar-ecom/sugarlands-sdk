@@ -7,12 +7,12 @@ const prePopulateCards = () => {
         const gcURL = '/giftcard';
 
         const groupHeader = document.createElement('h2');
-        groupHeader.innerText = groups[group].name;
+        groupHeader.innerText = unscape(group);
         groupHeader.classList.add('collection-card-heading');
 
-        productGrouping.innerHTML = `${groups[group].ids.map(id => `
+        productGrouping.innerHTML = `${groups[group].map(bottle => `
             <a liquid-id="${id}" 
-            href="${id.includes('GIFTCARD') ? gcURL : baseURL }?groupingId=${id}&group=${group == 'gifts' ? 'all' : group}" 
+            href="${id.includes('GIFTCARD') ? gcURL : baseURL }?groupingId=${bottle.groupingId}&group=${group == 'gifts' ? 'all' : group}" 
             class="product-card">
             <span class="loader-skeleton"></span>
            </a>
