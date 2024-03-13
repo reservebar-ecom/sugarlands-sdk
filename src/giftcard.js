@@ -4,7 +4,7 @@ const prePopulateCarousel = () => {
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const group = urlParams.get('group');
+    const group = escape(urlParams.get('group'));
 
     const productGrouping = document.createElement('div');
     productGrouping.classList.add('item');
@@ -21,7 +21,7 @@ const carouselCard = (product) => {
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const group = urlParams.get('group');
+    const group = escape(urlParams.get('group'));
     const baseURL = '/product-liquid-sdk';
 
     if (product) {
@@ -67,7 +67,7 @@ const loadLiquid = async () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const groupingId = urlParams.get('groupingId');
-    const group = urlParams.get('group');
+    const group = escape(urlParams.get('group'));
     const groupingIdValues = groups[group].ids;
 
     setState({ name: 'grouping_id', value: groupingId });
