@@ -1,6 +1,6 @@
 <?php
 $requestUri = $_SERVER['REQUEST_URI'];
-if (strpos($requestUri, 'collection-liquid-sdk') !== false || strpos($requestUri, 'product-liquid-sdk') !== false) {
+if (strpos($requestUri, 'shop') !== false || strpos($requestUri, 'product') !== false) {
 	$posts_data = array();
 
 // Create a post query to get all posts

@@ -46,14 +46,6 @@ const customerPlacementMap = {
 
 const groupingIds = products.map(p=>p.groupingId); 
 
-// const groups = {
-//     sugarlands: {
-//         name: "Sugarlands",
-//         ids: groupingIds
-//     }
-// }
-
-
 const groups = products.reduce((acc, obj) => {
     const key = escape(obj.group);
     if (!acc[key]) {
@@ -62,22 +54,6 @@ const groups = products.reduce((acc, obj) => {
     acc[key].push(obj);
     return acc;
 }, {});
-
-// const groupMap = new Map();
-
-// products.forEach(p => {
-//     const updatedGroupIds = (groupMap?.get(p?.group)?.ids || []);
-//     updatedGroupIds.push(p.groupingId);
-//     groupMap.set(
-//         escape(p.group),
-//         {
-//             name: p.group,
-//             ids: updatedGroupIds
-//         }
-//     )
-// });
-
-// const groups = Object.fromEntries(groupMap);
 
 const engravingIcon = `<div class="engraving-icon-wrapper"><div title="Engraving Available" class="engraving-icon"><small> ENGRAVING AVAILABLE</small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed" viewBox="0 0 16 16">
 <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z"/>

@@ -3,7 +3,7 @@ const prePopulateCards = () => {
     Object.keys(groups).filter(gr => gr != 'all').forEach(group => {
         const productGrouping = document.createElement('div');
         productGrouping.classList.add('product-grouping');
-        const baseURL = '/product-liquid-sdk';
+        const baseURL = '/product';
         const gcURL = '/giftcard';
 
         const groupHeader = document.createElement('h2');
