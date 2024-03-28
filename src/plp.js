@@ -3,6 +3,8 @@ const prePopulateCards = () => {
     Object.keys(groups).filter(gr => gr != 'all').forEach(group => {
         const productGrouping = document.createElement('div');
         productGrouping.classList.add('product-grouping');
+        productGrouping.setAttribute('group',group);
+
         const baseURL = '/product';
         const gcURL = '/giftcard';
 
